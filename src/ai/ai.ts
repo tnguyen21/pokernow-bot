@@ -2,7 +2,7 @@ import { PreflopPhase } from "../state";
 import { findBestGapStraight, getPairs, isOneCardFlushPossible, isOneCardStraightPossible, isOpenEndedStraightPresent } from "./aiUtils";
 import { ifThenElseAction } from "./ifThenElse/ifThenElseAi";
 
-export function getAction(state: State): Action {
+export function getAction(state: any): Action {
     if (state.phase.code > PreflopPhase.code) {
         console.log("stats", {
             flushDraw: isOneCardFlushPossible(state.handPlusBoard),
