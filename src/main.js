@@ -40,9 +40,13 @@ function startBotLoop() {
     function botLoop() {
         console.log("bot turn");
         let state = {
+            // "phase": {
+            //     "name": "preflop",
+            //     "code": 0
+            // },
             "phase": {
-                "name": "preflop",
-                "code": 0
+                "name": "flop",
+                "code": 1
             },
             "handRank": {
                 "name": "high",
